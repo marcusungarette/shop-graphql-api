@@ -13,4 +13,8 @@ export class CategoryService {
   async findAll(): Promise<Category[]> {
     return this.categoryRepository.find()
   }
+
+  async create(data: Category): Promise<Category> {
+    return this.categoryRepository.save(data)
+  }
 }

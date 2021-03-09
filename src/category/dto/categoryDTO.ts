@@ -7,4 +7,7 @@ export class CategoryDTO {
 
   @Field({ nullable: true })
   name: string
+
+  @Field({ nullable: true })
+  slug: string
 }
